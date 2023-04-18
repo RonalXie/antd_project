@@ -4,18 +4,16 @@
         <br/>
         <a-row :gutter="16">
             <a-col :span="18">
-                <div :style="{ background: '#fff', padding: '24px', minHeight: '280px' }">
+                <div :style="{ background: '#fff', padding: '24px', minHeight: '280px'}">
                     <a-row :gutter="16">
                         <a-col :span="8" v-for="i in 16" :key="i">
-                            <ContentCard></ContentCard>
+                            <ArticleCard/>
                         </a-col>
                     </a-row>
                 </div>
             </a-col>
             <a-col :span="6">
-                <a-card>
-                    热门文章
-                </a-card>
+              <HotArticleCard/>
             </a-col>
 
         </a-row>
@@ -24,15 +22,17 @@
 
 <script>
 
-import ContentCard from "@/components/home/ContentCard.vue";
 import HeadCard from "@/components/home/HeadCard.vue";
+import ArticleCard from "@/components/home/ArticleCard.vue";
+import HotArticleCard from "@/components/home/HotArticleCard.vue";
 
 
 export default {
     name: 'HomeView',
     components: {
+      HotArticleCard,
+      ArticleCard,
         HeadCard,
-        ContentCard
     }
 }
 </script>
