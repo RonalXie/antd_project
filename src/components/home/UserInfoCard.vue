@@ -1,8 +1,8 @@
 <template>
   <div>
-      <a-card style="text-align: center;height: 280px">
+      <a-card style="text-align: center;height: 280px" :bordered="false" hoverable>
               <div>
-                  <a-avatar :size="108" src="https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png"></a-avatar>
+                  <a-avatar :size="96" src="https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png"></a-avatar>
               </div>
           <a-space direction="vertical">
               <div>
@@ -16,9 +16,18 @@
               </div>
               <div>
                   <a-space size="large">
-                      <span class="user-info-bottom">文章: 18</span>
-                      <span class="user-info-bottom">粉丝: 18</span>
-                      <span class="user-info-bottom">关注: 18</span>
+                      <div>
+                          <div>文章</div>
+                          <div>18</div>
+                      </div>
+                      <div>
+                          <div>文章</div>
+                          <div>18</div>
+                      </div>
+                      <div>
+                          <div>文章</div>
+                          <div>18</div>
+                      </div>
                   </a-space>
               </div>
 
