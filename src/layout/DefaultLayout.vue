@@ -1,7 +1,7 @@
 <template>
     <a-layout id="components-layout-demo-top" class="layout">
         <DefaultHeader/>
-        <a-layout-content style="padding: 0 50px;margin-top: 24px">
+        <a-layout-content style="padding: 0 180px;margin-top: 24px;margin-bottom: 24px">
             <div>
                 <router-view/>
             </div>

@@ -7,8 +7,7 @@
             <img
                 alt="example"
                 height="240"
-                width="320"
-
+                width="100%"
                 style="border-radius: 10px"
                 src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/bootstrap-vue-argon-dashboard-pro/opt_badp_thumbnail.jpg"
             />
@@ -25,19 +24,12 @@
                     <a-space>
                         <span>ronalxie</span>
                         <a-tag>Java</a-tag>
-                        <a-tag>Python</a-tag>
                     </a-space>
-
                 </a-col>
                 <a-col :span="11">
                     <div style="float: right;font-size: 12px">
                         <span>
                         <a-icon type="heart" style="margin-right: 3px" />
-                        128
-                        </span>
-                        <a-divider type="vertical"></a-divider>
-                        <span>
-                        <a-icon type="eye" style="margin-right: 3px" />
                         128
                         </span>
                     </div>
@@ -70,7 +62,7 @@ export default {
 .info {
     position: absolute;
     bottom: 40px;
-    width: 320px;
+    width: 100%;
     height: 50px;
     opacity: 0.3;
     background: black;
@@ -84,7 +76,6 @@ export default {
 }
 
 .action {
-    width: 320px;
     height: 35px;
     margin-top: 5px;
 }

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import PictureVIew from "@/views/PictureVIew.vue";
 
 Vue.use(VueRouter)
 
@@ -11,9 +12,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/picture',
+    name: 'picture',
+    component: PictureVIew
   }
 ]
 

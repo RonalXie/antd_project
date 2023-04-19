@@ -1,6 +1,6 @@
 <template>
   <div>
-      <a-layout-footer style="text-align: center">
+      <a-layout-footer style="text-align: center;background: #fff">
           WebSite Design ©2023 Created by RonalXie
       </a-layout-footer>
   </div>

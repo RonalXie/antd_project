@@ -4,20 +4,24 @@
         <br/>
         <a-row :gutter="16">
             <a-col :span="18">
-                <div :style="{ background: '#fff', padding: '24px', minHeight: '280px'}">
+                <div :style="{  minHeight: '280px'}">
                     <a-row :gutter="16">
-                        <a-col :span="8" v-for="i in 16" :key="i">
+                        <a-col :span="8" v-for="i in 15" :key="i">
                             <ArticleCard/>
                         </a-col>
                     </a-row>
+                    <div style="text-align: center">
+                        <a-pagination :current="current" :defaultPageSize="16" :total="500" @change="onChange"/>
+                    </div>
                 </div>
             </a-col>
             <a-col :span="6">
-              <HotArticleCard/>
+                <HotArticleCard/>
+                <TagSetCard/>
             </a-col>
 
         </a-row>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -25,15 +29,27 @@
 import HeadCard from "@/components/home/HeadCard.vue";
 import ArticleCard from "@/components/home/ArticleCard.vue";
 import HotArticleCard from "@/components/home/HotArticleCard.vue";
+import TagSetCard from "@/components/home/TagSetCard.vue";
 
 
 export default {
     name: 'HomeView',
     components: {
-      HotArticleCard,
-      ArticleCard,
+        TagSetCard,
+        HotArticleCard,
+        ArticleCard,
         HeadCard,
-    }
+    },
+    data(){
+      return{
+          current:3
+      }
+    },
+    methods: {
+        onChange(current) {
+            this.current = current;
+        },
+    },
 }
 </script>
 <style scoped>

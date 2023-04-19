@@ -1,31 +1,33 @@
 <template>
-  <a-carousel :after-change="onChange">
-    <div><h3>1</h3></div>
-    <div><h3>2</h3></div>
-    <div><h3>3</h3></div>
-    <div><h3>4</h3></div>
-  </a-carousel>
+    <a-carousel :after-change="onChange" autoplay>
+        <div>
+            <TopArticleCard/>
+        </div>
+        <div><h3>2</h3></div>
+        <div><h3>3</h3></div>
+        <div><h3>4</h3></div>
+    </a-carousel>
 </template>
 <script>
+import TopArticleCard from "@/components/headers/TopArticleCard.vue";
+
 export default {
-  methods: {
-    onChange(a, b, c) {
-      console.log(a, b, c);
+    components: {TopArticleCard},
+    methods: {
+        onChange(a, b, c) {
+            console.log(a, b, c);
+        },
     },
-  },
 };
 </script>
 <style scoped>
 /* For demo */
 .ant-carousel >>> .slick-slide {
-  text-align: center;
-  height: 160px;
-  line-height: 160px;
-  background: #ffffff;
-  overflow: hidden;
+    height: 280px;
+    overflow: hidden;
 }
 
 .ant-carousel >>> .slick-slide h3 {
-  color: #fff;
+    color: #fff;
 }
 </style>
