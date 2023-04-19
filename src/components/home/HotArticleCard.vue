@@ -61,11 +61,15 @@ export default {
 </script>
 <style scoped>
 .hot-card{
-    background: #fff;
+  /*background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);*/
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
     margin-bottom: 24px;
     padding: 16px;
+    /*background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);*/
+  background-image: linear-gradient(60deg, #a8edea 0%, #fed6e3 100%);
+
+
 }
 
 </style>

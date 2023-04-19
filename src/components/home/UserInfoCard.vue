@@ -53,7 +53,7 @@ export default {
     /*background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
     /*background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-image: linear-gradient(60deg, #a8edea 0%, #fed6e3 100%);
     text-align: center;
     height: 280px;
     padding: 16px;

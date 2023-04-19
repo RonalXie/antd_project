@@ -1,10 +1,10 @@
 <template>
     <div>
         <a-row :gutter="16">
-            <a-col :span="18">
+            <a-col :xxl="18" :xl="18" :lg="18" :md="24" :sm="24" :xs="24">
                 <TopArticleCard/>
             </a-col>
-            <a-col :span="6">
+            <a-col :xxl="6" :xl="6" :lg="6" :md="24" :sm="24" :xs="24">
                 <UserInfoCard/>
             </a-col>
         </a-row>

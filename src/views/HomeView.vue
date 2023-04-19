@@ -3,10 +3,10 @@
         <HeadCard/>
         <br/>
         <a-row :gutter="16">
-            <a-col :span="18">
+            <a-col :xxl="18" :xl="18" :lg="18" :md="24" :sm="24" :xs="24">
                 <div :style="{  minHeight: '280px'}">
                     <a-row :gutter="16">
-                        <a-col :span="8" v-for="i in 15" :key="i">
+                        <a-col :xxl="6" :xl="8" :lg="8" :md="12" :sm="24" :xs="24" v-for="i in 15" :key="i">
                             <ArticleCard/>
                         </a-col>
                     </a-row>
@@ -15,7 +15,7 @@
                     </div>
                 </div>
             </a-col>
-            <a-col :span="6">
+            <a-col :xxl="6" :xl="6" :lg="6" :md="24" :sm="24" :xs="24">
                 <HotArticleCard/>
                 <TagSetCard/>
             </a-col>
