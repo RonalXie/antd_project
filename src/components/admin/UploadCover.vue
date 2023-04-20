@@ -4,11 +4,11 @@
             list-type="picture-card"
             class="avatar-uploader"
             :show-upload-list="false"
-            action="localhost:8090/file/upload/cover"
+            action="http://localhost:8090/file/upload/cover"
             :before-upload="beforeUpload"
             @change="handleChange"
     >
-        <img v-if="imageUrl" :src="imageUrl" alt="avatar" />
+        <img v-if="imageUrl" :src="imageUrl" alt="avatar" width="300" height="240" style="object-fit: cover"/>
         <div v-else>
             <a-icon :type="loading ? 'loading' : 'plus'" />
             <div class="ant-upload-text">

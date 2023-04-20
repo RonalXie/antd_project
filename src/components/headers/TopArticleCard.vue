@@ -30,7 +30,7 @@
                                 <span><a-icon type="calendar"/>&nbsp;2023-04-18</span>
                             </a-col>
                             <a-col :span="6">
-                                <a-button type="primary">阅读更多</a-button>
+                                <a-button type="primary" @click="getMes">阅读更多</a-button>
                             </a-col>
                         </a-row>
                     </div>
@@ -43,8 +43,19 @@
 </template>
 
 <script>
+
+import {hello} from "@/api/article";
+
 export default {
-    name: "TopArticleCard"
+    name: "TopArticleCard",
+    methods:{
+      getMes(){
+        hello().then(data=>{
+          alert(data.data)
+        })
+
+      }
+    }
 }
 </script>
 

@@ -57,5 +57,4 @@ export default {
 <style scoped>
 
 </style>
-<!--<style src="@wangeditor/editor/dist/css/style.css"></style>-->
 
