@@ -18,10 +18,10 @@
                                 @click="menuClick"
                         >
                             <a-menu-item key="/">
-                                <span><a-icon type="home" theme="twoTone" two-tone-color="#ea4c89"/>Home</span>
+                                <span><a-icon type="home"/>Home</span>
                             </a-menu-item>
                             <a-menu-item key="/picture">
-                                <span><a-icon type="picture" theme="twoTone" two-tone-color="#ea4c89"/>图库</span>
+                                <span><a-icon type="picture"/>图库</span>
                             </a-menu-item>
                         </a-menu>
                     </a-col>
@@ -40,14 +40,7 @@
                                     </a-avatar>
                                     <a-menu slot="overlay">
                                         <a-menu-item key="/user/center">
-                                            <span><a-icon type="user"/>个人中心</span>
-                                        </a-menu-item>
-                                        <a-menu-item key="/message/center">
-                                            <span><a-icon type="message"/>消息盒子</span>
-                                        </a-menu-item>
-                                        <a-menu-divider/>
-                                        <a-menu-item>
-                                            <span><a-icon type="logout"></a-icon>退出登录</span>
+                                            <span><a-icon type="user"/>管理中心</span>
                                         </a-menu-item>
                                     </a-menu>
                                 </a-dropdown>
@@ -55,7 +48,6 @@
                         </div>
                     </a-col>
                 </a-row>
-
             </div>
         </a-layout-header>
 
