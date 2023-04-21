@@ -13,6 +13,12 @@
     font-family:"Microsoft Yahei","幼圆","黑体",sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #fff;
+
+}
+html,body{
+    background-color: #fff;
+
 }
 </style>
 <script setup>

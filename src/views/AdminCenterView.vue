@@ -6,7 +6,7 @@
                     <a-icon type="user"/>
                     个人中心
                 </span>
-        个人中心
+                <ManageUser/>
       </a-tab-pane>
       <a-tab-pane key="2">
                 <span slot="tab">
@@ -36,9 +36,10 @@
 import EditArticle from "@/components/admin/EditArticle.vue";
 import ManageArticle from "@/components/admin/ManageArticle.vue";
 import ManagePicture from "@/components/admin/ManagePicture.vue";
+import ManageUser from "@/components/admin/ManageUser.vue";
 
 export default {
-  components: {ManagePicture, ManageArticle, EditArticle},
+  components: {ManageUser, ManagePicture, ManageArticle, EditArticle},
   data() {
     return {};
   },

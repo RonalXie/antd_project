@@ -1,9 +1,10 @@
 import request from "@/uitls/request";
 
 
-export function hello() {
+export function insertArticle(data) {
     return request({
-        url: '/article/hello',
-        method: 'get',
+        url: '/article/save',
+        method: 'post',
+        data:data
     })
 }

@@ -19,6 +19,7 @@
 </template>
 <script>
 function getBase64(img, callback) {
+    console.log(img,callback)
     const reader = new FileReader();
     reader.addEventListener('load', () => callback(reader.result));
     reader.readAsDataURL(img);
@@ -32,12 +33,13 @@ export default {
     },
     methods: {
         handleChange(info) {
-            console.log(info)
             if (info.file.status === 'uploading') {
                 this.loading = true;
                 return;
             }
             if (info.file.status === 'done') {
+                console.log(info.file.response)
+                this.$emit("getCover",info.file.response)
                 // Get this url from response in real world.
                 getBase64(info.file.originFileObj, imageUrl => {
                     this.imageUrl = imageUrl;
